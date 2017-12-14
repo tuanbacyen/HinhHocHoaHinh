@@ -45,7 +45,7 @@ namespace HinhHocHoaHinh.makForm
             thumb = thumb.Trim();
             if (thumb == "" || thumb == null || thumb.Equals(""))
             {
-                thumb = "../images/shutterstock_26085196.jpg";
+                thumb = "../images/imgthumb.jpg";
             }
             return "<div class='art-content-layout'>" +
                 "<div class='art-content-layout-row'>" +
