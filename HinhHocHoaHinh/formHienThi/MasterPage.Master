@@ -22,23 +22,23 @@
                 <nav class="art-nav">
                     <div class="art-nav-inner">
                         <ul class="art-hmenu">
-                            <li><a href="../trang-chu.html" class="">Trang chủ</a></li>
-                            <li><a href="../gioi-thieu-mon-hoc.html" class="">Giới thiệu Môn học</a><ul class="">
-                                <li><a href="../gioi-thieu-mon-hoc/lich-su-hinh-thanh-va-phat-trien.html" class="">Lịch sử hình thành và phát triển</a></li>
-                                <li><a href="../gioi-thieu-mon-hoc/tam-quan-trong-cua-mon-hoc.html" class="">Tầm quan trọng của môn học</a></li>
-                                <li><a href="../gioi-thieu-mon-hoc/vai-tro-cua-mon-hoc.html" class="">Vai trò của môn học</a></li>
+                            <li><a href="frm_TrangChu.aspx" class="">Trang chủ</a></li>
+                            <li><a href="#" class="">Giới thiệu Môn học</a><ul class="">
+                                <li><a href="#" class="">Lịch sử hình thành và phát triển</a></li>
+                                <li><a href="#" class="">Tầm quan trọng của môn học</a></li>
+                                <li><a href="#" class="">Vai trò của môn học</a></li>
                             </ul>
                             </li>
-                            <li><a href="../cac-bai-toan.html" class="active">Các Bài toán</a><ul class="active">
-                                <li><a href="../cac-bai-toan/đai-cuong-ve-phep-chieu.html" class="active">Đại cương về phép chiếu</a></li>
-                                <li><a href="../cac-bai-toan/bieu-dien.html">Biểu diễn</a></li>
-                                <li><a href="../cac-bai-toan/bai-toan-vi-tri.html">Bài toán vị trí</a></li>
-                                <li><a href="../cac-bai-toan/bai-toan-luong.html">Bài toán lượng</a></li>
-                                <li><a href="../cac-bai-toan/bai-toan-giao.html">Bài toán giao</a></li>
+                            <li><a href="#" class="active">Các Bài toán</a><ul class="active">
+                                <li><a href="#" class="active">Đại cương về phép chiếu</a></li>
+                                <li><a href="#">Biểu diễn</a></li>
+                                <li><a href="#">Bài toán vị trí</a></li>
+                                <li><a href="#">Bài toán lượng</a></li>
+                                <li><a href="#">Bài toán giao</a></li>
                             </ul>
                             </li>
-                            <li><a href="../tai-nguyen.html">Tài nguyên</a></li>
-                            <li><a href="../ho-tro.html">Hỗ trợ</a></li>
+                            <li><a href="#">Tài nguyên</a></li>
+                            <li><a href="#">Hỗ trợ</a></li>
                         </ul>
                     </div>
                 </nav>

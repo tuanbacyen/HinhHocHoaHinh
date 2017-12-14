@@ -740,6 +740,7 @@
     <Content Include="ckfinder\skins\v1\uipanel.css" />
     <Content Include="ckfinder\userfiles\images\banner-doanhnghiep.jpg" />
     <Content Include="ckfinder\userfiles\_thumbs\Images\banner-doanhnghiep.jpg" />
+    <Content Include="formHienThi\frm_BaiViet.aspx" />
     <Content Include="formHienThi\frm_TrangChu.aspx" />
     <Content Include="formHienThi\MasterPage.Master" />
     <Content Include="ckeditor\.htaccess" />
@@ -792,10 +793,23 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\script.js" />
     <Content Include="js\script.responsive.js" />
+    <Content Include="Uploads\images\2.jpg" />
+    <Content Include="Uploads\images\4%281%29.jpg" />
+    <Content Include="Uploads\images\4.jpg" />
+    <Content Include="Uploads\_thumbs\Images\2.jpg" />
+    <Content Include="Uploads\_thumbs\Images\4%281%29.jpg" />
+    <Content Include="Uploads\_thumbs\Images\4.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="config\Connection.cs" />
+    <Compile Include="formHienThi\frm_BaiViet.aspx.cs">
+      <DependentUpon>frm_BaiViet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiViet.aspx.designer.cs">
+      <DependentUpon>frm_BaiViet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="formHienThi\frm_TrangChu.aspx.cs">
       <DependentUpon>frm_TrangChu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -810,6 +824,7 @@
     <Compile Include="formHienThi\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="makForm\mkBaiViet.cs" />
     <Compile Include="makForm\mkTrangChu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

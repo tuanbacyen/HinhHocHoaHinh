@@ -17,7 +17,6 @@ namespace HinhHocHoaHinh.formHienThi
             StringBuilder sbTable = new StringBuilder();
             sbTable.Clear();
             sbTable.Append(tc.trangchu());
-            string a = tc.trangchu();
             test.Controls.Add(new Literal { Text = sbTable.ToString() });
         }
     }
