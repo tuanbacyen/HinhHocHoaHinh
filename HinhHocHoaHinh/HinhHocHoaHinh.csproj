@@ -749,12 +749,20 @@
     <Content Include="ckeditor\.htaccess" />
     <Content Include="ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="ckfinder\userfiles\.htaccess" />
+    <Content Include="formQuanTri\frmBaiVietHot.aspx" />
+    <Content Include="formQuanTri\frmBaiVietHotCU.aspx" />
+    <Content Include="formQuanTri\frmBaiVietHotD.aspx" />
     <Content Include="formQuanTri\frmDanhSachBaiViet.aspx" />
     <Content Include="formQuanTri\frmHome.aspx" />
+    <Content Include="formQuanTri\frmLoaiBaiViet.aspx" />
+    <Content Include="formQuanTri\frmLoaiBaiVietCUD.aspx" />
     <Content Include="formQuanTri\frmLogin.aspx" />
     <Content Include="formQuanTri\frmMQT.Master" />
     <None Include="packages.config" />
+    <Content Include="formQuanTri\frmTrangBaiViet.aspx" />
+    <Content Include="formQuanTri\frmTrangBaiVietCUD.aspx" />
     <Content Include="formQuanTri\frmVietBai.aspx" />
+    <Content Include="formQuanTri\test.aspx" />
     <Content Include="images\bg.jpg" />
     <Content Include="images\img.jpg" />
     <Content Include="images\imgthumb.jpg" />
@@ -5086,6 +5094,27 @@
     <Compile Include="formHienThi\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="formQuanTri\frmBaiVietHot.aspx.cs">
+      <DependentUpon>frmBaiVietHot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formQuanTri\frmBaiVietHot.aspx.designer.cs">
+      <DependentUpon>frmBaiVietHot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formQuanTri\frmBaiVietHotCU.aspx.cs">
+      <DependentUpon>frmBaiVietHotCU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formQuanTri\frmBaiVietHotCU.aspx.designer.cs">
+      <DependentUpon>frmBaiVietHotCU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formQuanTri\frmBaiVietHotD.aspx.cs">
+      <DependentUpon>frmBaiVietHotD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formQuanTri\frmBaiVietHotD.aspx.designer.cs">
+      <DependentUpon>frmBaiVietHotD.aspx</DependentUpon>
+    </Compile>
     <Compile Include="formQuanTri\frmDanhSachBaiViet.aspx.cs">
       <DependentUpon>frmDanhSachBaiViet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -5099,6 +5128,20 @@
     </Compile>
     <Compile Include="formQuanTri\frmHome.aspx.designer.cs">
       <DependentUpon>frmHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formQuanTri\frmLoaiBaiViet.aspx.cs">
+      <DependentUpon>frmLoaiBaiViet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formQuanTri\frmLoaiBaiViet.aspx.designer.cs">
+      <DependentUpon>frmLoaiBaiViet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formQuanTri\frmLoaiBaiVietCUD.aspx.cs">
+      <DependentUpon>frmLoaiBaiVietCUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formQuanTri\frmLoaiBaiVietCUD.aspx.designer.cs">
+      <DependentUpon>frmLoaiBaiVietCUD.aspx</DependentUpon>
     </Compile>
     <Compile Include="formQuanTri\frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
@@ -5114,6 +5157,20 @@
     <Compile Include="formQuanTri\frmMQT.Master.designer.cs">
       <DependentUpon>frmMQT.Master</DependentUpon>
     </Compile>
+    <Compile Include="formQuanTri\frmTrangBaiViet.aspx.cs">
+      <DependentUpon>frmTrangBaiViet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formQuanTri\frmTrangBaiViet.aspx.designer.cs">
+      <DependentUpon>frmTrangBaiViet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formQuanTri\frmTrangBaiVietCUD.aspx.cs">
+      <DependentUpon>frmTrangBaiVietCUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formQuanTri\frmTrangBaiVietCUD.aspx.designer.cs">
+      <DependentUpon>frmTrangBaiVietCUD.aspx</DependentUpon>
+    </Compile>
     <Compile Include="formQuanTri\frmVietBai.aspx.cs">
       <DependentUpon>frmVietBai.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -5121,6 +5178,14 @@
     <Compile Include="formQuanTri\frmVietBai.aspx.designer.cs">
       <DependentUpon>frmVietBai.aspx</DependentUpon>
     </Compile>
+    <Compile Include="formQuanTri\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formQuanTri\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="makForm\LoaiBaiVietHot.cs" />
     <Compile Include="makForm\mkBaiViet.cs" />
     <Compile Include="makForm\mkTrangChu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

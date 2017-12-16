@@ -16,7 +16,7 @@ namespace HinhHocHoaHinh.makForm
 
         public string trangchu()
         {
-            DataTable dbHots = Connection.GetDataTable("select h.announcements, b.ten, b.tomtat ,b.imgthumb,b.id from tbl_baiviethot h join tbl_baiviet b on h.id_baiviet = b.id");
+            DataTable dbHots = Connection.GetDataTable("select h.announcements, b.ten, b.tomtat ,b.imgthumb,b.id from tbl_baiviethot h join tbl_baiviet b on h.id_baiviet = b.id order by h.id_baiviet desc");
             string Announcements = "";
             string Assignments = "";
             string dvHead = "";

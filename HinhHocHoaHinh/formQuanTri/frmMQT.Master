@@ -71,9 +71,9 @@
                                     <ul class="nav child_menu">
                                         <li><a href="frmVietBai.aspx">Viết bài</a></li>
                                         <li><a href="frmDanhSachBaiViet.aspx">Danh Sách bài viết</a></li>
-                                        <li><a href="frmHome.aspx">Thể loại bài đọc</a></li>
-                                        <li><a href="frmHome.aspx">Quản lý bài viết hot</a></li>
-                                        <li><a href="frmHome.aspx">Các trang bài viết</a></li>
+                                        <li><a href="frmTrangBaiViet.aspx">Các trang bài viết</a></li>
+                                        <li><a href="frmLoaiBaiViet.aspx">Thể loại bài viết</a></li>
+                                        <li><a href="frmBaiVietHot.aspx">Quản lý bài viết hot</a></li>
                                     </ul>
                                 </li>
                                 <li>

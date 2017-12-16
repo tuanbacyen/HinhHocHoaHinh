@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Phần Mềm Quản Lý Đoàn Viên</title>
+    <title>Quản trị bài viết</title>
 
     <!-- Bootstrap -->
     <link href="../styles/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">

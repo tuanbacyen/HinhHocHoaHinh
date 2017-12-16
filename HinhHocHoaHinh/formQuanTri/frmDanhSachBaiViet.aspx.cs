@@ -80,6 +80,8 @@ namespace HinhHocHoaHinh.formQuanTri
             {
                 sql = sql + " where t.id_trang = '" + drlTrang.SelectedValue + "'";
             }
+            sql = sql + " order by id desc";
+
             DataTable dbbv = Connection.GetDataTable(sql);
             sbTable.Clear();
             tbl_BaiViet.Controls.Clear();
@@ -105,7 +107,10 @@ namespace HinhHocHoaHinh.formQuanTri
                     sbTable.Append("<td style='text-align: center;'>" + dbbv.Rows[i][0].ToString() + "</td>");
                     sbTable.Append("<td>" + dbbv.Rows[i][1].ToString() + "</td>");
                     sbTable.Append("<td>" + dbbv.Rows[i][2].ToString() + "</td>");
-                    sbTable.Append("<td><img alt='' width='100' height='100' style='float: left;' src='../" + dbbv.Rows[i][3].ToString() + "'/></td>");
+                    string imgLink = "images/imgthumb.jpg";
+                    if (dbbv.Rows[i][3].ToString() != "" && dbbv.Rows[i][3].ToString() != null)
+                        imgLink = dbbv.Rows[i][3].ToString();
+                    sbTable.Append("<td><img alt='' width='100' height='100' style='float: left;' src='../" + imgLink + "'/></td>");
                     sbTable.Append("<td>" + dbbv.Rows[i][4].ToString() + "</td>");
                     sbTable.Append("<td>" + dbbv.Rows[i][5].ToString() + "</td>");
                     sbTable.Append("<td>" + dbbv.Rows[i][6].ToString() + "</td>");

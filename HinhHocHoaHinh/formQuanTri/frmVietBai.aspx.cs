@@ -84,8 +84,8 @@ namespace HinhHocHoaHinh.formQuanTri
         {
             try
             {
-
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Xóa thành công!')", true);
+                string sql = "DELETE FROM tbl_baiviet where id = " + Request.QueryString["id"];
+                Connection.ExcuteSQL(sql);
                 Response.Redirect("frmDanhSachBaiViet.aspx");
 
             }
