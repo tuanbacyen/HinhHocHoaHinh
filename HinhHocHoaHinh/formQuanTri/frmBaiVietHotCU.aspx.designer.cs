@@ -13,6 +13,33 @@ namespace HinhHocHoaHinh.formQuanTri {
     public partial class frmBaiVietHotCU {
         
         /// <summary>
+        /// drlTrang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drlTrang;
+        
+        /// <summary>
+        /// drlLoai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drlLoai;
+        
+        /// <summary>
+        /// btlReset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btlReset;
+        
+        /// <summary>
         /// drl control.
         /// </summary>
         /// <remarks>
@@ -40,21 +67,12 @@ namespace HinhHocHoaHinh.formQuanTri {
         protected global::System.Web.UI.WebControls.Button btnHuy;
         
         /// <summary>
-        /// btnThem control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnThem;
-        
-        /// <summary>
-        /// tbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder tbl;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

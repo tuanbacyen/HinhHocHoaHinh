@@ -13,46 +13,104 @@ namespace HinhHocHoaHinh.formQuanTri
 {
     public partial class frmBaiVietHotCU : System.Web.UI.Page
     {
-        StringBuilder sbTable = new StringBuilder();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["maTaiKhoan"] == null)
                 Response.Redirect("frmLogin.aspx");
             if (!IsPostBack)
             {
-                DisplayOnTable("");
-                getLoai();
+                DisplayOnTable();
+                getLoaiHienThi();
+                getTrang();
+                if (drlTrang.SelectedValue != "" && drlLoai.SelectedItem == null)
+                    getLoai();
             }
         }
 
-        private void DisplayOnTable(String key)
+        private void DisplayOnTable()
         {
-            string sql = "select b.id, b.ten from tbl_baiviet b order by b.id desc";
-            DataTable db = Connection.GetDataTable(sql);
-
-            sbTable.Clear();
-            tbl.Controls.Clear();
-            sbTable.Append("<thead>" +
-                            "<tr class='headings'>" +
-                            "<th style='width: 120px; text-align: center;' class='column-title'>Chọn</th>" +
-                            "<th class='column-title'>Tên bài viết</th></tr></thead>");
-            sbTable.Append("<tbody>");
-
-            if (db.Rows.Count > 0)
+            string sql = "select b.id, b.ten from tbl_baiviet b FULL OUTER JOIN tbl_baiviethot h on b.id = h.id_baiviet join tbl_loaibaiviet l on b.maloai = l.maloai join tbl_trang t on l.id_trang = t.id_trang ";
+            if (Request.QueryString["id"] == null)
             {
-                for (int i = 0; i < db.Rows.Count; i++)
+                sql = sql + " where h.id is null ";
+            }
+            else
+            {
+                sql = sql + " where h.id is null or b.id = " + Request.QueryString["id"];
+            }
+
+            if (drlLoai.SelectedValue != "")
+            {
+                sql = sql + " and l.maloai = '" + drlLoai.SelectedValue + "'";
+            }
+            else if (drlTrang.SelectedValue != "")
+            {
+                sql = sql + " and t.id_trang = '" + drlTrang.SelectedValue + "'";
+            }
+
+            sql = sql + " order by b.id desc";
+
+            DataTable db = Connection.GetDataTable(sql);
+            try
+            {
+                GridView1.DataSource = db;
+                GridView1.DataBind();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            if (Request.QueryString["id"] != null)
+            {
+                SetSelectedRecord();
+            }
+        }
+
+        private string GetSelectedRecord()
+        {
+            string id = "";
+            for (int i = 0; i < GridView1.Rows.Count; i++)
+            {
+                RadioButton rb = (RadioButton)GridView1.Rows[i]
+                        .Cells[0].FindControl("RadioButton1");
+                if (rb != null)
                 {
-                    sbTable.Append("<tr>");
-                    sbTable.Append("<td><asp:RadioButton runat='server' ID='_" + db.Rows[i][0] + "' GroupName='chon'>" + db.Rows[i][0] + "</asp:RadioButton></td>");
-                    sbTable.Append("<td>" + db.Rows[i][1].ToString() + "</td>");
-                    sbTable.Append("</tr>");
+                    if (rb.Checked)
+                    {
+                        HiddenField hf = (HiddenField)GridView1.Rows[i].Cells[0].FindControl("HiddenField1");
+                        if (hf != null)
+                        {
+                            id = hf.Value;
+                        }
+
+                        break;
+                    }
                 }
             }
-            sbTable.Append("</tbody>");
-            tbl.Controls.Add(new Literal { Text = sbTable.ToString() });
+            return id;
         }
 
-        private void getLoai()
+        private void SetSelectedRecord()
+        {
+            for (int i = 0; i < GridView1.Rows.Count; i++)
+            {
+                RadioButton rb = (RadioButton)GridView1.Rows[i].Cells[0].FindControl("RadioButton1");
+                if (rb != null)
+                {
+                    HiddenField hf = (HiddenField)GridView1.Rows[i].Cells[0].FindControl("HiddenField1");
+                    if (hf != null && Request.QueryString["id"] != null)
+                    {
+                        if (hf.Value.Equals(Request.QueryString["id"].ToString()))
+                        {
+                            rb.Checked = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void getLoaiHienThi()
         {
             if (drl.SelectedItem == null)
             {
@@ -64,12 +122,119 @@ namespace HinhHocHoaHinh.formQuanTri
                     items.Add(new ListItem(LoaiBaiVietHot.loaiBVH[i], (i + 1).ToString()));
                 }
                 drl.Items.AddRange(items.ToArray());
-
+                if (Request.QueryString["id"] != null)
+                {
+                    string sqlA = "select announcements from tbl_baiviethot where id_baiviet = " + Request.QueryString["id"];
+                    int ann = Connection.AExcuteSQL(sqlA);
+                    drl.SelectedValue = ann.ToString();
+                }
             }
+        }
+
+        private void getTrang()
+        {
+            List<ListItem> items = new List<ListItem>();
+            DataTable dbTrang = Connection.GetDataTable("select * from tbl_trang");
+            items.Clear();
+            items.Add(new ListItem("Chọn trang", ""));
+            if (drlTrang.SelectedItem == null)
+            {
+                if (dbTrang.Rows.Count > 0)
+                {
+                    for (int i = 0; i < dbTrang.Rows.Count; i++)
+                    {
+                        drlTrang.Items.Clear();
+                        items.Add(new ListItem(dbTrang.Rows[i][1].ToString(), dbTrang.Rows[i][0].ToString()));
+                    }
+                }
+                drlTrang.Items.AddRange(items.ToArray());
+            }
+        }
+
+        private void getLoai()
+        {
+            List<ListItem> items = new List<ListItem>();
+            items.Clear();
+            items.Add(new ListItem("Chọn Loại Bài Viết", ""));
+            string sql = "";
+            if (drlTrang.SelectedValue == "")
+            {
+                sql = "select * from tbl_loaibaiviet";
+            }
+            else
+            {
+                sql = "select * from tbl_loaibaiviet where id_trang = '" + drlTrang.SelectedValue + "'";
+            }
+            DataTable dbLoai = Connection.GetDataTable(sql);
+            if (dbLoai.Rows.Count > 0)
+            {
+                for (int i = 0; i < dbLoai.Rows.Count; i++)
+                {
+                    items.Add(new ListItem(dbLoai.Rows[i][1].ToString(), dbLoai.Rows[i][0].ToString()));
+                }
+            }
+            drlLoai.Items.Clear();
+            drlLoai.Items.AddRange(items.ToArray());
         }
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
+            string sql = "";
+            string drAn = drl.SelectedValue;
+            if (drl.SelectedValue == "")
+            {
+                drAn = "1";
+            }
+            if (GetSelectedRecord() == "")
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Chưa chọn bài viết')", true);
+            }
+            else
+            {
+                if (Request.QueryString["id"] == null)
+                {
+                    sql = "insert into tbl_baiviethot values('" + GetSelectedRecord() + "','" + drAn + "','" + DateTime.Now.ToString() + "')";
+                }
+                else
+                {
+                    string sqlA = "select id from tbl_baiviethot where id_baiviet = " + Request.QueryString["id"];
+                    int ann = Connection.AExcuteSQL(sqlA);
+                    sql = "update tbl_baiviethot set id_baiviet = '" + GetSelectedRecord() + "', announcements = '" + drAn + "', inup = '" + DateTime.Now.ToString() + "' where id = " + ann;
+                }
+
+                if (Connection.ExcuteSQL(sql))
+                {
+                    string sqlcount = "select count(*) from tbl_baiviethot";
+                    int count = Connection.AExcuteSQL(sqlcount);
+                    if (count > 10)
+                    {
+                        string d = "delete from tbl_baiviethot where id = (select top 1 id from tbl_baiviethot order by inup asc)";
+                        Connection.ExcuteSQL(d);
+                    }
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Thành công!')", true);
+                    Response.Redirect("frmBaiVietHot.aspx");
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Đã xảy ra lỗi!')", true);
+                }
+            }
+        }
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            drlTrang.SelectedValue = "";
+            drlLoai.SelectedValue = "";
+            drlLoai.Items.Clear();
+            DisplayOnTable();
+        }
+        protected void drlTrang_TextChanged(object sender, EventArgs e)
+        {
+            getLoai();
+            DisplayOnTable();
+        }
+        protected void drlLoai_TextChanged(object sender, EventArgs e)
+        {
+            DisplayOnTable();
         }
     }
 }

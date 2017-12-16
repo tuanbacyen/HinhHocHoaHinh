@@ -58,20 +58,27 @@ namespace HinhHocHoaHinh.formQuanTri
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
-            string sql = "";
-            if (Request.QueryString["id"] == null)
-                sql = "insert into tbl_loaibaiviet values(N'" + txtLoai.Text + "','" + drlTrang.SelectedValue + "')";
-            else
-                sql = "update tbl_loaibaiviet set tenloai = N'" + txtLoai.Text + "', id_trang = '" + drlTrang.SelectedValue + "' where maloai = " + Request.QueryString["id"];
-
-            if (Connection.ExcuteSQL(sql))
+            if (drlTrang.SelectedValue == "")
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Thành công!')", true);
-                Response.Redirect("frmLoaiBaiViet.aspx");
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Chưa chọn Trang')", true);
             }
             else
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Đã xảy ra lỗi!')", true);
+                string sql = "";
+                if (Request.QueryString["id"] == null)
+                    sql = "insert into tbl_loaibaiviet values(N'" + txtLoai.Text + "','" + drlTrang.SelectedValue + "')";
+                else
+                    sql = "update tbl_loaibaiviet set tenloai = N'" + txtLoai.Text + "', id_trang = '" + drlTrang.SelectedValue + "' where maloai = " + Request.QueryString["id"];
+
+                if (Connection.ExcuteSQL(sql))
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Thành công!')", true);
+                    Response.Redirect("frmLoaiBaiViet.aspx");
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Thông Báo", "alert('Đã xảy ra lỗi!')", true);
+                }
             }
         }
         protected void btnXoa_Click(object sender, EventArgs e)

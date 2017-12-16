@@ -29,7 +29,7 @@ namespace HinhHocHoaHinh.formQuanTri
             string sql = "select b.id, b.ten, h.announcements, h.id from tbl_baiviethot h join tbl_baiviet b on h.id_baiviet = b.id ";
             if (drl.SelectedValue != "")
                 sql = sql + " where h.announcements = '" + drl.SelectedValue + "'";
-            sql = sql + " order by h.id_baiviet desc";
+            sql = sql + " order by h.inup desc";
 
             DataTable db = Connection.GetDataTable(sql);
 

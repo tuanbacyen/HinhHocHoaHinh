@@ -762,7 +762,6 @@
     <Content Include="formQuanTri\frmTrangBaiViet.aspx" />
     <Content Include="formQuanTri\frmTrangBaiVietCUD.aspx" />
     <Content Include="formQuanTri\frmVietBai.aspx" />
-    <Content Include="formQuanTri\test.aspx" />
     <Content Include="images\bg.jpg" />
     <Content Include="images\img.jpg" />
     <Content Include="images\imgthumb.jpg" />
@@ -5177,13 +5176,6 @@
     </Compile>
     <Compile Include="formQuanTri\frmVietBai.aspx.designer.cs">
       <DependentUpon>frmVietBai.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="formQuanTri\test.aspx.cs">
-      <DependentUpon>test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="formQuanTri\test.aspx.designer.cs">
-      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
     <Compile Include="makForm\LoaiBaiVietHot.cs" />
     <Compile Include="makForm\mkBaiViet.cs" />
