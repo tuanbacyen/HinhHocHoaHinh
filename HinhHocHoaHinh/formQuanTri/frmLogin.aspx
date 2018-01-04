@@ -12,13 +12,13 @@
     <title>Quản trị bài viết</title>
 
     <!-- Bootstrap -->
-    <link href="../styles/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../styles/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../styles/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/nprogress/nprogress.css" rel="stylesheet">
     <!-- Animate.css -->
-    <link href="../styles/vendors/animate.css/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/3e552b9/animate.css/animate.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="../styles/build/css/custom.min.css" rel="stylesheet">

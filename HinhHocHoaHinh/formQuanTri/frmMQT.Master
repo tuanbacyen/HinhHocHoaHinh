@@ -13,27 +13,27 @@
         </asp:ContentPlaceHolder>
     </title>
     <!-- Bootstrap -->
-    <link href="../styles/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../styles/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../styles/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-    <link href="../styles/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- bootstrap-progressbar -->
-    <link href="../styles/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- JQVMap -->
-    <link href="../styles/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
-    <link href="../styles/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Datatables -->
-    <link href="../styles/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="../styles/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="../styles/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="../styles/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="../styles/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="../styles/build/css/custom.min.css" rel="stylesheet">
 </head>
@@ -148,7 +148,6 @@
             <!-- footer content -->
             <footer>
                 <div class="pull-right">
-                    Nhóm 15 - .NET 2
                 </div>
                 <div class="clearfix"></div>
             </footer>
@@ -156,62 +155,64 @@
         </div>
     </div>
     <!-- jQuery -->
-    <script src="../styles/vendors/jquery/dist/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
-    <script src="../styles/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../styles/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="../styles/vendors/fastclick/lib/fastclick.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../styles/vendors/nprogress/nprogress.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/nprogress/nprogress.js"></script>
     <!-- Chart.js -->
-    <script src="../styles/vendors/Chart.js/dist/Chart.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/Chart.js/dist/Chart.min.js"></script>
     <!-- gauge.js -->
-    <script src="../styles/vendors/gauge.js/dist/gauge.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/gauge.js/dist/gauge.min.js"></script>
     <!-- bootstrap-progressbar -->
-    <script src="../styles/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
-    <script src="../styles/vendors/iCheck/icheck.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/iCheck/icheck.min.js"></script>
     <!-- Skycons -->
-    <script src="../styles/vendors/skycons/skycons.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/skycons/skycons.js"></script>
 
     <!-- Datatables -->
-    <script src="../styles/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../styles/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <script src="../styles/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="../styles/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-    <script src="../styles/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-    <script src="../styles/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="../styles/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="../styles/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-    <script src="../styles/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-    <script src="../styles/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../styles/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-    <script src="../styles/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-    <script src="../styles/vendors/jszip/dist/jszip.min.js"></script>
-    <script src="../styles/vendors/pdfmake/build/pdfmake.min.js"></script>
-    <script src="../styles/vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-buttons/js/buttons.html5.min.js"></script>
+
+    <!-- -->
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/jszip/dist/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/pdfmake/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/pdfmake/build/vfs_fonts.js"></script>
 
     <!-- Flot -->
-    <script src="../styles/vendors/Flot/jquery.flot.js"></script>
-    <script src="../styles/vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../styles/vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../styles/vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../styles/vendors/Flot/jquery.flot.resize.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/Flot/jquery.flot.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/Flot/jquery.flot.pie.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/Flot/jquery.flot.time.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/Flot/jquery.flot.stack.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/Flot/jquery.flot.resize.js"></script>
     <!-- Flot plugins -->
-    <script src="../styles/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../styles/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../styles/vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/flot.curvedlines/curvedLines.js"></script>
     <!-- DateJS -->
-    <script src="../styles/vendors/DateJS/build/date.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/DateJS/build/date.js"></script>
     <!-- JQVMap -->
-    <script src="../styles/vendors/jqvmap/dist/jquery.vmap.js"></script>
-    <script src="../styles/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="../styles/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/a9a9543f/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
     <!-- bootstrap-daterangepicker -->
-    <script src="../styles/vendors/moment/min/moment.min.js"></script>
-    <script src="../styles/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/moment/min/moment.min.js"></script>
+    <script src="https://cdn.rawgit.com/tuanbacyen/vendors/b7337c34/bootstrap-daterangepicker/daterangepicker.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../styles/build/js/custom.min.js"></script>
     <script>

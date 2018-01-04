@@ -13,30 +13,30 @@ namespace HinhHocHoaHinh.formQuanTri {
     public partial class frmHome {
         
         /// <summary>
-        /// labCountKhoa control.
+        /// labCountBV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labCountKhoa;
+        protected global::System.Web.UI.WebControls.Label labCountBV;
         
         /// <summary>
-        /// labCountNganh control.
+        /// labCountLBV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labCountNganh;
+        protected global::System.Web.UI.WebControls.Label labCountLBV;
         
         /// <summary>
-        /// labCountLop control.
+        /// labCountTBV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labCountLop;
+        protected global::System.Web.UI.WebControls.Label labCountTBV;
     }
 }
