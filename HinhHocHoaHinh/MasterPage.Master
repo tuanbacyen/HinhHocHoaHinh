@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="HinhHocHoaHinh.MasterPage" %>
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>New Page</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/style.responsive.css" media="all">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/script.responsive.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="art-main">
+            <div id="art-hmenu-bg" class="art-bar art-nav">
+            </div>
+            <div class="art-sheet clearfix">
+                <nav class="art-nav">
+                    <div class="art-nav-inner">
+                        <ul class="art-hmenu">
+                            <li><a href="frm_TrangChu.aspx" class="">Trang chủ</a></li>
+                            <li><a href="#" class="">Giới thiệu Môn học</a><ul class="">
+                                <li><a href="#" class="">Lịch sử hình thành và phát triển</a></li>
+                                <li><a href="#" class="">Tầm quan trọng của môn học</a></li>
+                                <li><a href="#" class="">Vai trò của môn học</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" class="active">Các Bài toán</a><ul class="active">
+                                <li><a href="#" class="active">Đại cương về phép chiếu</a></li>
+                                <li><a href="#">Biểu diễn</a></li>
+                                <li><a href="#">Bài toán vị trí</a></li>
+                                <li><a href="#">Bài toán lượng</a></li>
+                                <li><a href="#">Bài toán giao</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Tài nguyên</a></li>
+                            <li><a href="#">Hỗ trợ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <header class="art-header">
+
+                    <div class="art-shapes">
+                    </div>
+
+                    <h1 class="art-headline">
+                        <a href="/">Bộ môn Hình Họa</a>
+                    </h1>
+                    <h2 class="art-slogan">There are so many more things to discover</h2>
+                </header>
+                <div class="art-layout-wrapper">
+                    <div class="art-content-layout">
+                        <div class="art-content-layout-row">
+                            <div class="art-layout-cell art-content">
+                                <article class="art-post art-article">
+                                    <div>
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                          
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="art-footer">
+                    <a title="RSS" class="art-rss-tag-icon" style="position: absolute; bottom: 15px; left: 6px; line-height: 32px;" href="#"></a>
+                    <div style="position: relative; padding-left: 10px; padding-right: 10px">
+                        <p>Copyright © 2011. Study To Learn. All Rights Reserved.</p>
+                    </div>
+                </footer>
+
+            </div>
+            <p class="art-page-footer">
+                <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+            </p>
+        </div>
+    </form>
+</body>
+</html>
