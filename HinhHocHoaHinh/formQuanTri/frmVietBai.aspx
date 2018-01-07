@@ -24,7 +24,7 @@
                             <p><b>Loại bài viết: </b></p>
                             <asp:DropDownList ID="drlLoai" runat="server" CssClass="form-control input-group" AutoPostBack="True"></asp:DropDownList>
                             <p><b>Bài viết: </b></p>
-                            <ckeditor:ckeditorcontrol runat="server" id="txtNoiDung"></ckeditor:ckeditorcontrol>
+                            <CKEditor:CKEditorControl id="txtNoiDung" runat=server></CKEditor:CKEditorControl>
 
                             <table style="max-width: 100%; margin: auto; margin-top: 15px; border-spacing: 10px;">
                                 <tr>

@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using HinhHocHoaHinh.Config;
+using CKFinder;
 
 namespace HinhHocHoaHinh.formQuanTri
 {
@@ -13,6 +14,9 @@ namespace HinhHocHoaHinh.formQuanTri
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            FileBrowser fb = new FileBrowser();
+            fb.BasePath = "/ckfinder";
+            fb.SetupCKEditor(txtNoiDung);
             if (Session["maTaiKhoan"] == null)
                 Response.Redirect("frmLogin.aspx");
             if (!IsPostBack)
