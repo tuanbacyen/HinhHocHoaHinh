@@ -32,7 +32,7 @@
             -moz-background-size: cover;
             -o-background-size: cover;*/
             background-size: 100% 1080px;
-            padding: 20px;            
+            padding: 20px;
         }
 
         ._txt {

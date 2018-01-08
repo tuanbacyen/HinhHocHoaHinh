@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/MasterPage.Master" autoeventwireup="true" codebehind="frm_TrangChu.aspx.cs" inherits="HinhHocHoaHinh.frm_TrangChu" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/formHienThi/MasterPage.Master" autoeventwireup="true" codebehind="frm_TrangChu.aspx.cs" inherits="HinhHocHoaHinh.frm_TrangChu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

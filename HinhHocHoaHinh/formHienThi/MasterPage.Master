@@ -29,16 +29,16 @@
                                 <li><a href="#" class="">Vai trò của môn học</a></li>
                             </ul>
                             </li>
-                            <li><a href="#" class="active">Các Bài toán</a><ul class="active">
-                                <li><a href="#" class="active">Đại cương về phép chiếu</a></li>
-                                <li><a href="#">Biểu diễn</a></li>
-                                <li><a href="#">Bài toán vị trí</a></li>
-                                <li><a href="#">Bài toán lượng</a></li>
-                                <li><a href="#">Bài toán giao</a></li>
+                            <li><a href="#" class="frm_CacBaiToan.aspx">Các Bài toán</a><ul class="">
+                                <li><a href="frm_DaiCuongVePhepChieu.aspx" class="active">Đại cương về phép chiếu</a></li>
+                                <li><a href="frm_BaiToanBieuDien.aspx">Biểu diễn</a></li>
+                                <li><a href="frm_BaiToanViTri.aspx">Bài toán vị trí</a></li>
+                                <li><a href="frm_BaiToanLuong.aspx">Bài toán lượng</a></li>
+                                <li><a href="frm_BaiToanGiao.aspx">Bài toán giao</a></li>
                             </ul>
                             </li>
                             <li><a href="#">Tài nguyên</a></li>
-                            <li><a href="#">Hỗ trợ</a></li>
+                            <li><a href="frm_Forum.aspx">Forum</a></li>
                         </ul>
                     </div>
                 </nav>

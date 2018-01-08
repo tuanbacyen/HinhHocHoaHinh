@@ -857,9 +857,16 @@
     <Content Include="ckfinder\skins\v1\uipanel.css" />
     <Content Include="ckfinder\userfiles\images\banner-doanhnghiep.jpg" />
     <Content Include="ckfinder\userfiles\_thumbs\Images\banner-doanhnghiep.jpg" />
-    <Content Include="frm_BaiViet.aspx" />
-    <Content Include="frm_TrangChu.aspx" />
-    <Content Include="MasterPage.Master" />
+    <Content Include="formHienThi\frm_BaiToanBieuDien.aspx" />
+    <Content Include="formHienThi\frm_BaiToanGiao.aspx" />
+    <Content Include="formHienThi\frm_BaiToanLuong.aspx" />
+    <Content Include="formHienThi\frm_BaiToanViTri.aspx" />
+    <Content Include="formHienThi\frm_BaiViet.aspx" />
+    <Content Include="formHienThi\frm_CacBaiToan.aspx" />
+    <Content Include="formHienThi\frm_DaiCuongVePhepChieu.aspx" />
+    <Content Include="formHienThi\frm_Forum.aspx" />
+    <Content Include="formHienThi\frm_TrangChu.aspx" />
+    <Content Include="formHienThi\MasterPage.Master" />
     <Content Include="formQuanTri\frmBaiVietHot.aspx" />
     <Content Include="formQuanTri\frmBaiVietHotCU.aspx" />
     <Content Include="formQuanTri\frmBaiVietHotD.aspx" />
@@ -903,7 +910,7 @@
     <Content Include="css\style.css" />
     <Content Include="css\style.ie7.css" />
     <Content Include="css\style.responsive.css" />
-    <Content Include="page.jpeg" />
+    <Content Include="formHienThi\page.jpeg" />
     <Content Include="images\12small-3.jpg" />
     <Content Include="images\blockbullets.png" />
     <Content Include="images\dublin-2small-2.jpg" />
@@ -959,25 +966,74 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="config\Connection.cs" />
-    <Compile Include="frm_BaiViet.aspx.cs">
+    <Compile Include="formHienThi\frm_BaiToanBieuDien.aspx.cs">
+      <DependentUpon>frm_BaiToanBieuDien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiToanBieuDien.aspx.designer.cs">
+      <DependentUpon>frm_BaiToanBieuDien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiToanGiao.aspx.cs">
+      <DependentUpon>frm_BaiToanGiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiToanGiao.aspx.designer.cs">
+      <DependentUpon>frm_BaiToanGiao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiToanLuong.aspx.cs">
+      <DependentUpon>frm_BaiToanLuong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiToanLuong.aspx.designer.cs">
+      <DependentUpon>frm_BaiToanLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiToanViTri.aspx.cs">
+      <DependentUpon>frm_BaiToanViTri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiToanViTri.aspx.designer.cs">
+      <DependentUpon>frm_BaiToanViTri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formHienThi\frm_BaiViet.aspx.cs">
       <DependentUpon>frm_BaiViet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="frm_BaiViet.aspx.designer.cs">
+    <Compile Include="formHienThi\frm_BaiViet.aspx.designer.cs">
       <DependentUpon>frm_BaiViet.aspx</DependentUpon>
     </Compile>
-    <Compile Include="frm_TrangChu.aspx.cs">
+    <Compile Include="formHienThi\frm_CacBaiToan.aspx.cs">
+      <DependentUpon>frm_CacBaiToan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formHienThi\frm_CacBaiToan.aspx.designer.cs">
+      <DependentUpon>frm_CacBaiToan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formHienThi\frm_DaiCuongVePhepChieu.aspx.cs">
+      <DependentUpon>frm_DaiCuongVePhepChieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formHienThi\frm_DaiCuongVePhepChieu.aspx.designer.cs">
+      <DependentUpon>frm_DaiCuongVePhepChieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formHienThi\frm_Forum.aspx.cs">
+      <DependentUpon>frm_Forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formHienThi\frm_Forum.aspx.designer.cs">
+      <DependentUpon>frm_Forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formHienThi\frm_TrangChu.aspx.cs">
       <DependentUpon>frm_TrangChu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="frm_TrangChu.aspx.designer.cs">
+    <Compile Include="formHienThi\frm_TrangChu.aspx.designer.cs">
       <DependentUpon>frm_TrangChu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MasterPage.Master.cs">
+    <Compile Include="formHienThi\MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MasterPage.Master.designer.cs">
+    <Compile Include="formHienThi\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="formQuanTri\frmBaiVietHot.aspx.cs">
