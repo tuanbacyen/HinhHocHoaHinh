@@ -9,10 +9,10 @@ namespace HinhHocHoaHinh.makForm
 {
     public class mkTrangChu
     {
-        private string head = "<div class='art-layout-wrapper'><div class='art-content-layout'><div class='art-content-layout-row'><div class='art-layout-cell art-content'><article class='art-post art-article'><div class='art-postcontent art-postcontent-0 clearfix'><div class='art-content-layout'><div class='art-content-layout-row'><div class='art-layout-cell layout-item-0' style='width: 100%'><h3>Striving For Excellence</h3></div></div></div>";
+        private string head = "<div class='art-layout-wrapper'><div class='art-content-layout'><div class='art-content-layout-row'><div class='art-layout-cell art-content'><article class='art-post art-article'><div class='art-postcontent art-postcontent-0 clearfix'><div class='art-content-layout'><div class='art-content-layout-row'><div class='art-layout-cell layout-item-0' style='width: 100%'><h3>Bài viết mới</h3></div></div></div>";
         private string foodter = "</ul></div></div></div></div></article></div></div></div></div>";
-        private string headAnnouncements = "<div class='art-content-layout'><div class='art-content-layout-row'><div class='art-layout-cell layout-item-0' style='width: 50%'><h3>Announcements</h3><ul>";
-        private string headAssignments = "</ul></div><div class='art-layout-cell layout-item-0' style='width: 50%'><h3>Assignments</h3><ul>";
+        private string headAnnouncements = "<div class='art-content-layout'><div class='art-content-layout-row'><div class='art-layout-cell layout-item-0' style='width: 50%'><h3>Thông báo</h3><ul>";
+        private string headAssignments = "</ul></div><div class='art-layout-cell layout-item-0' style='width: 50%'><h3>Bài viết</h3><ul>";
 
         public string trangchu()
         {
@@ -45,13 +45,13 @@ namespace HinhHocHoaHinh.makForm
             thumb = thumb.Trim();
             if (thumb == "" || thumb == null || thumb.Equals(""))
             {
-                thumb = "../images/imgthumb.jpg";
+                thumb = "/images/imgthumb.jpg";
             }
             return "<div class='art-content-layout'>" +
                 "<div class='art-content-layout-row'>" +
                 "<div class='art-layout-cell layout-item-0' style='width: 50%'><br>" +
                 "<a href='frm_BaiViet.aspx?id=" + id + "'>" +
-                "<img alt='' width='350' height='233' src='../" + thumb + "' style='float: left;' class=''></a>" +
+                "<img alt='' width='350' height='233' src='.." + thumb + "' style='float: left;' class=''></a>" +
                 "</div>" +
                 "<div class='art-layout-cell layout-item-0' style='width: 50%'>" +
                 "<p>" +

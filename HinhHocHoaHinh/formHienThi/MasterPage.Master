@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="HinhHocHoaHinh.MasterPage" %>
+﻿<%@ master language="C#" autoeventwireup="true" codebehind="MasterPage.master.cs" inherits="HinhHocHoaHinh.MasterPage" %>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head runat="server">
@@ -10,6 +11,11 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/script.responsive.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/mycss.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -58,9 +64,9 @@
                             <div class="art-layout-cell art-content">
                                 <article class="art-post art-article">
                                     <div>
-                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
                                           
-                                        </asp:ContentPlaceHolder>
+                                        </asp:contentplaceholder>
                                     </div>
                                 </article>
                             </div>
